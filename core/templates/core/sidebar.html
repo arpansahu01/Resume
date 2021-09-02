@@ -1,0 +1,17 @@
+    {% load static %}
+    <div class="border-right border-warning h-100">
+        <div class="text-center">
+            <img src="{% static 'core/images/arpan3.jpg' %}" alt="profile pic" class="img-fluid rounded-circle mt-5"
+                width="100px" height="100px">
+            <h3 class="text-white mt-3 st-font">ARPAN SAHU</h3>
+        </div>
+        <hr class="border-light">
+        <nav class="nav flex-column text-center">
+            <a href="{% url 'homepage' %}" class="nav-link {{home}}">home</a>
+            <a href="{% url 'servpage' %}" class="nav-link {{serv}}">services</a>
+            <a href="{% url 'skillspage' %}" class="nav-link {{skill}}">skills</a>
+            <a href="{% url 'contactpage' %}" class="nav-link {{contact}}">contact</a>
+        </nav>
+
+    </div>
+

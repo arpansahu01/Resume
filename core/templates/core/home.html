@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="mt-5 text-center">
+    <img src="{% static 'core/images/arpan1.jpg' %}" alt="profile photo" class="img-thumbnail" width="150px"
+        height="150px">
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">
+        Hello,
+    </h1>
+    <div class="px-4" style="line-height: 2rem;">
+        <p style="text-indent: 100px;"> I am <b class="text-warning">Arpan sahu</b>
+            A Newcomer To IT Industry I have Done Btech In Computer Science
+            Engineering at <b class="text-warning">VIKASH INSTITUTE OF TECHNOLOGY,BARGARH</b>.
+        <p>
+            I am a talented, ambitious and hardworking individual, with broad skills and experience in digital and
+            printed marketing, social media and leading projects.
+
+            Furthermore, I am adept at handling multiple tasks on a daily basis competently and at working well under
+            pressure.
+        </p>
+
+        </b>
+
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contactpage' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+        <a href="{% url 'contactpage' %}" class="btn btn-outline-warning my-3">contact</a>
+    </div>
+</div>
+{% endblock content %}
